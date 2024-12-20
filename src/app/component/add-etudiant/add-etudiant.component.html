@@ -1,0 +1,34 @@
+<mat-card class="etudiant-card">
+    <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Nom</mat-label>
+                <input matInput formControlName="nom" placeholder="Entrez le nom de l'étudiant">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Prénom</mat-label>
+                <input matInput formControlName="prenom" placeholder="Entrez le prénom de l'étudiant">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Niveau</mat-label>
+                <input matInput formControlName="niveau" placeholder="Entrez le niveau de l'étudiant">
+            </mat-form-field>
+
+            <div class="actions">
+                <button mat-raised-button color="primary" type="submit" [disabled]="etudiantForm.invalid"
+                    class="btn-save">
+                    Enregistrer
+                </button>
+                <button mat-button color="warn" type="button" (click)="onCancel()" class="btn-cancel">
+                    Annuler
+                </button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

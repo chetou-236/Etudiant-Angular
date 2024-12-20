@@ -1,0 +1,22 @@
+{
+  "etudiant": [
+    {
+      "id": "1362",
+      "nom": "Aicha",
+      "prenom": "Djamilatou",
+      "niveau": "Genie Logiciel"
+    },
+    {
+      "id": "3cea",
+      "nom": "Magou",
+      "prenom": "Gaye",
+      "niveau": "Reseaux"
+    },
+    {
+      "id": "27bd",
+      "nom": "Mariame",
+      "prenom": "Issa",
+      "niveau": "Licence"
+    }
+  ]
+}
